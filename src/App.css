@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 100%;
+}
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.home-wrapper h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  width: 80%;
+}
+
+.home-wrapper .home-image-header {
+  background-image: url("https://a-static.besthdwallpaper.com/rick-and-morty-portal-gun-teleporting-wallpaper-3840x2160-89897_54.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+}
+
+.home-wrapper .home-image-header h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+ul.home-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  width: 80%;
+  list-style: none;
+  margin-top: 2rem;
+}
+
+ul.home-content li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+ul.home-content li:hover {
+  transform: translateY(-5px);
+}
+
+ul.home-content li img {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.home-button-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 2rem;
+}
+
+.home-wrapper button.home-button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  border: 1px solid #000;
+}
+
+.home-wrapper button.home-button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.home-wrapper button.home-button:disabled {
+  background-color: #3a3a3a;
+  color: #fff;
+  border: 1px solid #000;
+  cursor: not-allowed;
+}
+
+.character-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.character-details {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.character-details .character-details-image {
+  margin-right: 2rem;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.character-details .character-details-image img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.character-details .character-details-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.character-details .character-details-info h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.character-details .character-details-info p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.character-details .character-details-info a {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #000;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+
+.character-details .character-details-info a:hover {
+  color: #f00;
+}
+
+.character-details .character-details-info a:visited {
+  color: #000;
+}
+
+.character-details .character-details-info a:active {
+  color: #f00;
+}
+
+a.character-details-wrapper_goback {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.character-list-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.character-list-info-wrapper img {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.character-list-info-wrapper h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.loader-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.loader-wrapper .loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-wrapper {
+    height: 100vh;
+  }
+
+  .home-wrapper .home-content {
+    width: 100%;
+  }
+
+  .home-wrapper .home-content li {
+    width: 100%;
+    height: 100%;
+  }
+
+  .home-wrapper .home-content li img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .home-wrapper .home-button-wrapper {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .home-wrapper .home-image-header h2 {
+    font-size: 2rem;
+  }
+}
